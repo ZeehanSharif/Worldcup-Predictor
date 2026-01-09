@@ -1,0 +1,99 @@
+{
+  "data_summary": {
+    "n_matches_clean": 755,
+    "year_min": 1930,
+    "year_max": 2022,
+    "n_unique_teams": 76,
+    "label_counts": {
+      "win": 410,
+      "loss": 201,
+      "draw": 144
+    },
+    "holdout_year": 2022,
+    "holdout_n_matches": 61,
+    "holdout_label_counts": {
+      "win": 32,
+      "loss": 20,
+      "draw": 9
+    }
+  },
+  "models": {
+    "model1_logreg": {
+      "name": "Multinomial Logistic Regression",
+      "accuracy": 0.4918032786885246,
+      "macro_f1": 0.2974036191974823,
+      "log_loss": 1.4816352099180283,
+      "classes": [
+        "draw",
+        "loss",
+        "win"
+      ],
+      "confusion_matrix_labels": [
+        "win",
+        "draw",
+        "loss"
+      ],
+      "confusion_matrix": [
+        [
+          26,
+          0,
+          6
+        ],
+        [
+          8,
+          0,
+          1
+        ],
+        [
+          16,
+          0,
+          4
+        ]
+      ]
+    },
+    "model2_random_forest": {
+      "name": "Random Forest",
+      "accuracy": 0.5081967213114754,
+      "macro_f1": 0.4291486291486291,
+      "log_loss": 1.6192756076819315,
+      "classes": [
+        "draw",
+        "loss",
+        "win"
+      ],
+      "confusion_matrix_labels": [
+        "win",
+        "draw",
+        "loss"
+      ],
+      "confusion_matrix": [
+        [
+          23,
+          3,
+          6
+        ],
+        [
+          5,
+          4,
+          0
+        ],
+        [
+          10,
+          6,
+          4
+        ]
+      ]
+    }
+  },
+  "artifacts": {
+    "fig_dir": "reports\\figures",
+    "metrics_path": "reports\\metrics_holdout_2022.json",
+    "figures": {
+      "elo_trajectories": "reports/figures/elo_trajectories.png",
+      "cm_model1_2022": "reports/figures/cm_model1_2022.png",
+      "cm_model2_2022": "reports/figures/cm_model2_2022.png",
+      "perm_importance": "reports/figures/perm_importance.png"
+    },
+    "cleaned_csv": "data\\processed\\matches_clean.csv"
+  }
+}
