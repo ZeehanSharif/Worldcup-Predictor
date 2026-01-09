@@ -1,9 +1,8 @@
-# World Cup 2026 Outcome Forecasting  
-Authors: Team 4 (Zeehan, Colin, Maria, Michael, Jennifer) - CS 418 Fall 2025
+# World Cup Outcome Forecasting  
 
 ## Overview
 
-This project builds a reproducible data -> model pipeline to forecast the 2026 FIFA Men's World Cup.
+This project builds a reproducible data -> model pipeline to forecast the FIFA Men's World Cup.
 
 ## How to Run and Test
 
